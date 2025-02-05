@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "popular-cafe";
+  src: url('../assets/images/PinkPencilDemo.ttf');
+}
+@font-face {
+  font-family: "pink-pencil";
+  src: url('../assets/images/PinkPencilDemo.ttf');
+}
+@font-face {
+  font-family: "negaroa";
+  src: url('../assets/images/Negaroa-Regular.ttf');
+}
+@font-face {
+  font-family: "costarica";
+  src: url('../assets/images/costarica.otf');
+}
+@font-face {
+  font-family: "dongpora";
+  src: url('../assets/images/Dongpora-BF65c3a46d6cc22.otf');
+}

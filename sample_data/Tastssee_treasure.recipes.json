@@ -1,0 +1,220 @@
+[{
+  "_id": {
+    "$oid": "67a06427202f8537e0683d0f"
+  },
+  "user_id": "67a05a2f202f8537e0683cec",
+  "title": "Classic Caesar Salad",
+  "description": "A refreshing and classic salad featuring crisp romaine lettuce, crunchy homemade croutons, and  creamy Caesar dressing. For added protein, top with grilled chicken. Toss everything together just before serving to keep the lettuce crisp.",
+  "photo": "uploads\\1738564647908-1. Classic Caesar Salad.jpeg",
+  "__v": 0,
+  "ingredients": "Romaine lettuce, croutons, Parmesan cheese, Caesar dressing (made with egg yolks, garlic, Dijon mustard, anchovies, lemon juice, olive oil, and Worcestershire sauce), grilled chicken (optional), black pepper."
+},
+{
+  "_id": {
+    "$oid": "67a06444202f8537e0683d11"
+  },
+  "user_id": "67a05a2f202f8537e0683cec",
+  "title": "Caprese Salad",
+  "description": "A simple yet elegant Italian salad made with slices of fresh mozzarella, ripe tomatoes, and basil leaves. Drizzle with high-quality olive oil and balsamic glaze, then sprinkle with sea salt and freshly ground black pepper. Perfect as a light appetizer or side dish.",
+  "photo": "uploads\\1738564676854-2. Caprese Salad.png",
+  "__v": 0,
+  "ingredients": "Fresh mozzarella cheese, ripe tomatoes, fresh basil leaves, extra-virgin olive oil, balsamic glaze, sea salt, black pepper."
+},
+{
+  "_id": {
+    "$oid": "67a06466202f8537e0683d13"
+  },
+  "user_id": "67a05a2f202f8537e0683cec",
+  "title": "Greek Salad",
+  "description": "A vibrant Mediterranean salad featuring crisp cucumbers, juicy tomatoes, tangy Kalamata olives, and creamy feta cheese. Toss with a simple dressing of olive oil, red wine vinegar, and oregano for a refreshing and healthy dish.",
+  "photo": "uploads\\1738564710715-3. Greek Salad.jpeg",
+  "__v": 0,
+  "ingredients": "Cucumbers, tomatoes, red onions, Kalamata olives, feta cheese, extra-virgin olive oil, red wine vinegar, dried oregano, salt, pepper."
+},
+{
+  "_id": {
+    "$oid": "67a06486202f8537e0683d15"
+  },
+  "user_id": "67a05a2f202f8537e0683cec",
+  "title": "Bruschetta",
+  "description": "Toasted slices of baguette topped with a fresh mixture of diced tomatoes, minced garlic, chopped basil, olive oil, and balsamic vinegar. Sprinkle with salt and pepper for a flavorful and easy appetizer.",
+  "photo": "uploads\\1738564742551-4. Bruschetta.png",
+  "__v": 0,
+  "ingredients": " Baguette, ripe tomatoes, garlic, fresh basil, extra-virgin olive oil, balsamic vinegar, salt, pepper."
+},
+{
+  "_id": {
+    "$oid": "67a064a6202f8537e0683d17"
+  },
+  "user_id": "67a05a2f202f8537e0683cec",
+  "title": "Stuffed Mushrooms",
+  "description": "Mushroom caps stuffed with a creamy mixture of cream cheese, garlic, breadcrumbs, and Parmesan. Baked until golden and garnished with fresh parsley. A crowd-pleasing appetizer for any occasion.",
+  "photo": "uploads\\1738564774406-5. Stuffed Mushrooms.png",
+  "__v": 0,
+  "ingredients": "Button mushrooms, cream cheese, garlic, breadcrumbs, grated Parmesan cheese, fresh parsley, olive oil, salt, pepper."
+},
+{
+  "_id": {
+    "$oid": "67a064bd202f8537e0683d19"
+  },
+  "user_id": "67a05a2f202f8537e0683cec",
+  "title": "Spinach and Artichoke Dip",
+  "description": "A creamy and cheesy dip made with spinach, artichokes, and a blend of cheeses. Baked until bubbly and served warm with tortilla chips, bread, or crackers. Perfect for parties and gatherings.",
+  "photo": "uploads\\1738564797502-6. Spinach and Artichoke Dip.jpeg",
+  "__v": 0,
+  "ingredients": "Spinach, artichoke hearts, cream cheese, sour cream, shredded mozzarella, grated Parmesan, garlic, salt, pepper."
+},
+{
+  "_id": {
+    "$oid": "67a064e0202f8537e0683d1b"
+  },
+  "user_id": "67a05a2f202f8537e0683cec",
+  "title": "Chicken Alfredo Pasta",
+  "description": "A rich and indulgent pasta dish featuring tender chicken and fettuccine tossed in a creamy Alfredo sauce made with butter, cream, and Parmesan. Garnish with fresh parsley for a touch of color and flavor.",
+  "photo": "uploads\\1738564832766-7. Chicken Alfredo Pasta.png",
+  "__v": 0,
+  "ingredients": "Fettuccine pasta, chicken breast, heavy cream, butter, grated Parmesan cheese, garlic, salt, pepper, fresh parsley."
+},
+{
+  "_id": {
+    "$oid": "67a0650a202f8537e0683d1d"
+  },
+  "user_id": "67a05a2f202f8537e0683cec",
+  "title": "Beef Tacos",
+  "description": "Spicy ground beef seasoned with taco spices, stuffed into warm tortillas, and topped with fresh lettuce, tomatoes, cheese, salsa, and sour cream. Serve with lime wedges for a zesty finish.",
+  "photo": "uploads\\1738564874203-8. Beef Tacos.jpg",
+  "__v": 0,
+  "ingredients": "Ground beef, taco seasoning, tortillas, shredded lettuce, diced tomatoes, shredded cheese, salsa, sour cream, lime wedges."
+},
+{
+  "_id": {
+    "$oid": "67a06543202f8537e0683d21"
+  },
+  "user_id": "67a05a2f202f8537e0683cec",
+  "title": "Vegetable Stir-Fry",
+  "description": "A quick and healthy stir-fry loaded with colorful vegetables and tossed in a savory sauce made with soy sauce, garlic, ginger, and sesame oil. Serve over rice or noodles for a complete meal.",
+  "photo": "uploads\\1738564931008-9. Vegetable Stir-Fry.jpg",
+  "__v": 0,
+  "ingredients": "Broccoli, bell peppers, carrots, snap peas, soy sauce, garlic, ginger, sesame oil, cornstarch, vegetable broth."
+},
+{
+  "_id": {
+    "$oid": "67a06556202f8537e0683d23"
+  },
+  "user_id": "67a05a2f202f8537e0683cec",
+  "title": "Grilled Salmon with Lemon Butter",
+  "description": "Juicy salmon fillets grilled to perfection and topped with a tangy lemon butter sauce. Garnish with fresh parsley and serve with steamed vegetables or rice for a light and flavorful meal.",
+  "photo": "uploads\\1738643193658-10. Grilled Salmon with Lemon Butter.jpg",
+  "__v": 0,
+  "ingredients": "Salmon fillets, butter, lemon juice, garlic, fresh parsley, salt, pepper."
+},
+{
+  "_id": {
+    "$oid": "67a0695a202f8537e0683dc8"
+  },
+  "user_id": "67a05a2f202f8537e0683cec",
+  "title": "Chocolate Lava Cake",
+  "description": "A decadent dessert with a molten chocolate center. The cakes are baked just enough to set the outside while keeping the inside gooey. Serve warm with a dusting of powdered sugar or a scoop of vanilla ice cream.",
+  "photo": "uploads\\1738565978427-11. Chocolate Lava Cake.jpg",
+  "__v": 0,
+  "ingredients": "Dark chocolate, butter, sugar, eggs, flour, vanilla extract, powdered sugar (for dusting)."
+},
+{
+  "_id": {
+    "$oid": "67a0697a202f8537e0683dca"
+  },
+  "user_id": "67a05a2f202f8537e0683cec",
+  "title": "Cheesecake",
+  "description": "A creamy and smooth cheesecake with a buttery graham cracker crust. Baked to perfection and chilled before serving. Top with fresh berries or a fruit compote for added flavor.",
+  "photo": "uploads\\1738566010709-12. Cheesecake.jpg",
+  "__v": 0,
+  "ingredients": "Cream cheese, sugar, eggs, graham cracker crumbs, butter, sour cream, vanilla extract."
+},
+{
+  "_id": {
+    "$oid": "67a0699a202f8537e0683dcc"
+  },
+  "user_id": "67a05a2f202f8537e0683cec",
+  "title": "Tiramisu",
+  "description": "A classic Italian dessert made with layers of coffee-soaked ladyfingers and a rich mascarpone cream. Dust with cocoa powder and chill before serving for a luxurious treat.",
+  "photo": "uploads\\1738566042085-13. Tiramisu.jpg",
+  "__v": 0,
+  "ingredients": "Ladyfingers, mascarpone cheese, strong coffee, cocoa powder, eggs, sugar, rum or coffee liqueur (optional)."
+},
+{
+  "_id": {
+    "$oid": "67a069cf202f8537e0683dce"
+  },
+  "user_id": "67a05a2f202f8537e0683cec",
+  "title": "Fruit Salad",
+  "description": "A refreshing mix of fresh fruits lightly sweetened with honey and garnished with mint. Perfect as a healthy dessert or a side dish for brunch.",
+  "photo": "uploads\\1738566095665-14. Fruit Salad.jpg",
+  "__v": 0,
+  "ingredients": "Strawberries, blueberries, kiwi, oranges, grapes, honey, fresh mint."
+},
+{
+  "_id": {
+    "$oid": "67a069ec202f8537e0683dd0"
+  },
+  "user_id": "67a05a2f202f8537e0683cec",
+  "title": "Garlic Bread",
+  "description": "Toasty bread slathered with a garlic butter mixture and baked until golden and crispy. Sprinkle with Parmesan and parsley for extra flavor. A must-have side for pasta dishes.",
+  "photo": "uploads\\1738566124566-15. Garlic Bread.jpg",
+  "__v": 0,
+  "ingredients": "Baguette, butter, garlic, fresh parsley, grated Parmesan cheese."
+},
+{
+  "_id": {
+    "$oid": "67a06a07202f8537e0683dd2"
+  },
+  "user_id": "67a05a2f202f8537e0683cec",
+  "title": "Chicken Parmesan",
+  "description": "Breaded chicken breasts baked with marinara sauce and melted mozzarella and Parmesan cheeses. Serve over spaghetti for a hearty and comforting meal.",
+  "photo": "uploads\\1738566151813-16. Chicken Parmesan.jpg",
+  "__v": 0,
+  "ingredients": "Chicken breast, marinara sauce, mozzarella cheese, Parmesan cheese, breadcrumbs, eggs, flour, olive oil."
+},
+{
+  "_id": {
+    "$oid": "67a06a20202f8537e0683dd4"
+  },
+  "user_id": "67a05a2f202f8537e0683cec",
+  "title": "Shrimp Scampi",
+  "description": "Succulent shrimp cooked in a garlic butter sauce with a splash of white wine and lemon juice. Toss with spaghetti and garnish with fresh parsley for a quick and elegant dish.",
+  "photo": "uploads\\1738566176237-17. Shrimp Scampi.jpg",
+  "__v": 0,
+  "ingredients": "Shrimp, garlic, butter, white wine, lemon juice, parsley, spaghetti, red pepper flakes (optional)."
+},
+{
+  "_id": {
+    "$oid": "67a06a39202f8537e0683dd6"
+  },
+  "user_id": "67a05a2f202f8537e0683cec",
+  "title": "Chocolate Chip Cookies",
+  "description": "Classic homemade cookies with a soft and chewy texture and plenty of gooey chocolate chips. Perfect for dessert or a sweet snack.",
+  "photo": "uploads\\1738566201815-18. Chocolate Chip Cookies.jpg",
+  "__v": 0,
+  "ingredients": "Flour, butter, sugar, brown sugar, eggs, chocolate chips, vanilla extract, baking soda, salt.\r\n"
+},
+{
+  "_id": {
+    "$oid": "67a06a52202f8537e0683dd8"
+  },
+  "user_id": "67a05a2f202f8537e0683cec",
+  "title": "Panna Cotta",
+  "description": "A silky Italian dessert made with sweetened cream and gelatin, chilled until set. Serve with a berry compote or fresh fruit for a light and elegant finish to any meal.",
+  "photo": "uploads\\1738566226430-19. Panna Cotta.jpg",
+  "__v": 0,
+  "ingredients": "Heavy cream, sugar, vanilla extract, gelatin, mixed berries (for topping)."
+},
+{
+  "_id": {
+    "$oid": "67a06a6d202f8537e0683dda"
+  },
+  "user_id": "67a05a2f202f8537e0683cec",
+  "title": "Mango Sticky Rice",
+  "description": "A traditional Thai dessert featuring sweet sticky rice topped with fresh mango slices and drizzled with a creamy coconut sauce. Sprinkle with toasted sesame seeds for added texture.",
+  "photo": "uploads\\1738566253976-20. Mango Sticky Rice.jpg",
+  "__v": 0,
+  "ingredients": "Sticky rice, ripe mangoes, coconut milk, sugar, sesame seeds."
+}]

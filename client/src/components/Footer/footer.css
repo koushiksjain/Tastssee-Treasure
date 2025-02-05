@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root {
+    --syneFont: "Syne", sans-serif;
+    --primaryColorRed: #DB0008;
+    --primaryColorYellow: #FFB710;
+    --basicWhite: #fff;
+    --basicBlack: #000;
+}
+@font-face {
+    font-family: "popular-cafe";
+    src: url('../../assets/images/PinkPencilDemo.ttf');
+}
+@font-face {
+    font-family: "pink-pencil";
+    src: url('../../assets/images/PinkPencilDemo.ttf');
+}
+@font-face {
+    font-family: "negaroa";
+    src: url('../../assets/images/Negaroa-Regular.ttf');
+}
+@font-face {
+    font-family: "costarica";
+    src: url('../../assets/images/costarica.otf');
+}
+@font-face {
+    font-family: "dongpora";
+    src: url('../../assets/images/Dongpora-BF65c3a46d6cc22.otf');
+}
+footer {
+  background-color: var(--primaryColorRed); /* Tailwind's yellow-500 */
+}
+footer .logo-txt{
+  font: 30px "pink-pencil";
+}
+footer .para{
+  text-transform: bold;
+  font: 20px "negaroa";
+  font-weight: bold;
+}
+
+footer a {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+  color: #d69e2e; /* A darker shade for hover effect */
+  transform: translateY(-2px);
+}
+
+footer img {
+  transition: transform 0.3s ease;
+}
+
+footer img:hover {
+  transform: scale(1.1); /* Slightly enlarge logo on hover */
+}
