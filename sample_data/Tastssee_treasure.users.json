@@ -3,8 +3,8 @@
     "$oid": "67a05a2f202f8537e0683cec"
   },
   "firstName": "MR",
-  "lastName": "Recipeman",
-  "email": "recipes@gmail.com",
+  "lastName": "Recipe",
+  "email": "recipes1@gmail.com",
   "password": "$2b$10$0Y9DGwlXOH1I8DZZeezx8Ot4B2oOASERuXMfFPyzQFPPMaHkS8VWe",
   "likes": [
     "67a06427202f8537e0683d0f"
