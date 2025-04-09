@@ -35,4 +35,4 @@ app.use("/Profile_uploads", express.static(path.join(__dirname, "Profile_uploads
 
 
 const port = process.env.PORT || 8080;
-app.listen(port, console.log(`Listening on port ${port}...`));
+app.listen(port, () => console.log(`🚀 Listening on port ${port}...`));
