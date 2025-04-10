@@ -21,7 +21,7 @@ const RecipePage = () => {
       const fetchRequiredRecipes = async () => {
         try {
           const response = await axios.get(
-            "http://localhost:8080/api/recipe_store/user_required_recipe",
+            `${process.env.REACT_APP_API_BASE_URL}/api/recipe_store/user_required_recipe`,
             {
               params: {
                 recipe_id: dataReceived,
@@ -47,7 +47,7 @@ const RecipePage = () => {
           return;
         }
 
-        const response = await fetch("http://localhost:8080/api/username", {
+        const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/username`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -91,14 +91,14 @@ const RecipePage = () => {
       if (!isLiked) {
         console.log("Liking the recipe...");
         console.log(recipe_id);
-        await axios.post("http://localhost:8080/api/like_recipe/like/", {
+        await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/like_recipe/like/`, {
           user_id: user_id,
           recipe_id: recipe_id,
         });
         console.log("Recipe liked successfully!");
       } else if (isLiked) {
         console.log("Disliking the recipe...");
-        await axios.post("http://localhost:8080/api/like_recipe/dislike/", {
+        await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/like_recipe/dislike/`, {
           user_id: user_id,
           recipe_id: recipe_id,
         });
@@ -128,7 +128,7 @@ const RecipePage = () => {
         console.log("Liking the recipe...");
         console.log(recipe_id);
         await axios.post(
-          "http://localhost:8080/api/bookmark_recipe/bookmark/",
+          `${process.env.REACT_APP_API_BASE_URL}/api/bookmark_recipe/bookmark/`,
           {
             user_id: user_id,
             recipe_id: recipe_id,
@@ -138,7 +138,7 @@ const RecipePage = () => {
       } else if (isBookmarked) {
         console.log("Disliking the recipe...");
         await axios.post(
-          "http://localhost:8080/api/bookmark_recipe/remove_bookmark/",
+          `${process.env.REACT_APP_API_BASE_URL}/api/bookmark_recipe/remove_bookmark/`,
           {
             user_id: user_id,
             recipe_id: recipe_id,
@@ -247,7 +247,7 @@ const RecipePage = () => {
               className="border-2 border-dashed border-gray-200 relative flex items-center justify-center bg-gray-50 shadow-lg rounded-lg"
             >
               <img
-                src={`http://localhost:8080/${recipes.photo}`}
+                src={`${process.env.REACT_APP_API_BASE_URL}/${recipes.photo}`}
                 className="object-contain w-full h-full"
                 alt="Recipe"
               />

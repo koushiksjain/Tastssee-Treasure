@@ -16,7 +16,7 @@ export const AddMenu = () => {
           return;
         }
 
-        const response = await fetch("http://localhost:8080/api/username", {
+        const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/username`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -78,7 +78,7 @@ export const AddMenu = () => {
     console.log(user_id);
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/recipe_store",
+        `${process.env.REACT_APP_API_BASE_URL}/api/recipe_store`,
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },

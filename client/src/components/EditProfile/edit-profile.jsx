@@ -21,7 +21,7 @@ export const EditProfile = () => {
           return;
         }
 
-        const response = await fetch("http://localhost:8080/api/username", {
+        const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/username`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -53,7 +53,7 @@ export const EditProfile = () => {
           console.log(user_id);
           // Call the unlike API
           const response = await axios.get(
-            "http://localhost:8080/api/update_photo",
+            `${process.env.REACT_APP_API_BASE_URL}/api/update_photo`,
             {
               params: {
                 user_id: user_id,
@@ -142,19 +142,19 @@ export const EditProfile = () => {
         for (let [key, value] of formData.entries()) {
           console.log(`${key}: ${value}`);
         }
-        await axios.post("http://localhost:8080/api/update_photo", formData, {
+        await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/update_photo`, formData, {
           headers: { "Content-Type": "multipart/form-data" },
         });
         alert("Added successfully!");
         setPreview(null);
 
-        await axios.post("http://localhost:8080/api/update_user", newdata);
+        await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/update_user`, newdata);
 
         localStorage.removeItem("token");
         window.location.reload();
         navigate("/login");
       } else {
-        await axios.post("http://localhost:8080/api/update_user", newdata);
+        await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/update_user`, newdata);
 
         localStorage.removeItem("token");
         window.location.reload();
@@ -185,14 +185,14 @@ export const EditProfile = () => {
           console.log("hit");
 
           await axios.post(
-            "http://localhost:8080/api/update_photo/delete_photo/",
+            `${process.env.REACT_APP_API_BASE_URL}/api/update_photo/delete_photo/`,
             {
               user_id,
             }
           );
 
           await axios.post(
-            "http://localhost:8080/api/update_user/delete_user/",
+            `${process.env.REACT_APP_API_BASE_URL}/api/update_user/delete_user/`,
             {
               user_id: user_id,
             }
@@ -210,7 +210,7 @@ export const EditProfile = () => {
           console.log("hit");
 
           await axios.post(
-            "http://localhost:8080/api/update_user/delete_user/",
+            `${process.env.REACT_APP_API_BASE_URL}/api/update_user/delete_user/`,
             {
               user_id: user_id,
             }
@@ -266,7 +266,7 @@ export const EditProfile = () => {
                         className="rounded-full"
                         src={
                           oldPhoto
-                            ? `http://localhost:8080/Profile_uploads/${oldPhoto}`
+                            ? `${process.env.REACT_APP_API_BASE_URL}/Profile_uploads/${oldPhoto}`
                             : "https://placehold.co/100x100"
                         }
                         alt="Placeholder image for user profile picture."

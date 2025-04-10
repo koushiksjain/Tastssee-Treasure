@@ -20,7 +20,7 @@ export const SearchMenu = () => {
   useEffect(() => {
     const fetchRecipes = async () => {
       try {
-        const response = await fetch("http://localhost:8080/api/recipe_store"); // Adjust URL if needed
+        const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/recipe_store`); // Adjust URL if needed
         if (!response.ok) {
           throw new Error("Failed to fetch recipes");
         }
@@ -102,7 +102,7 @@ export const SearchMenu = () => {
                   <img
                     src={
                       recipe.photo
-                        ? `http://localhost:8080/${recipe.photo}`
+                        ? `${process.env.REACT_APP_API_BASE_URL}/${recipe.photo}`
                         : "https://placehold.co/200x200"
                     }
                     alt={`Image of ${recipe.title}`}

@@ -23,7 +23,7 @@ export const EditRecipes = () => {
           return;
         }
 
-        const response = await fetch("http://localhost:8080/api/username", {
+        const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/username`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -52,7 +52,7 @@ export const EditRecipes = () => {
         console.log(dataReceived);
         // Call the unlike API
         const response = await axios.get(
-          "http://localhost:8080/api/recipe_store/edit_recipe/",
+          `${process.env.REACT_APP_API_BASE_URL}/api/recipe_store/edit_recipe/`,
           {
             params: {
               recipe_id: dataReceived,
@@ -146,7 +146,7 @@ export const EditRecipes = () => {
           });
 
           const response = await axios.post(
-            "http://localhost:8080/api/recipe_store/update_recipe/",
+            `${process.env.REACT_APP_API_BASE_URL}/api/recipe_store/update_recipe/`,
             formData, // Pass formData directly
             {
               headers: { "Content-Type": "multipart/form-data" },
@@ -214,7 +214,7 @@ export const EditRecipes = () => {
                   />
                 ) : (
                   <img
-                    src={`http://localhost:8080/${editRecipe.photo}`}
+                    src={`${process.env.REACT_APP_API_BASE_URL}/${editRecipe.photo}`}
                     alt="Preview"
                     className="w-full h-full object-contain"
                   />

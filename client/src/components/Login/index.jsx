@@ -15,7 +15,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = "http://localhost:8080/api/auth";
+      const url = `${process.env.REACT_APP_API_BASE_URL}/api/auth`;
       const { data: res } = await axios.post(url, data);
       localStorage.setItem("token", res.data);
       window.location = "/";
@@ -72,7 +72,7 @@ const Login = () => {
               Sign Up
             </button>
           </Link>
-          <a href="http://localhost:3000/">
+          <a href={window.location.origin}>
             <button type="button" className={styles.white_btn}>
               Go Back
             </button>

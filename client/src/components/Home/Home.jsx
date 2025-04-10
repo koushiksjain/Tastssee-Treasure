@@ -28,7 +28,7 @@ export const Home = () => {
           return;
         }
 
-        const response = await fetch("http://localhost:8080/api/username", {
+        const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/username`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -56,7 +56,7 @@ export const Home = () => {
       const fetchRecipes = async () => {
         try {
           const response = await axios.get(
-            "http://localhost:8080/api/recipe_store/user_recipe",
+            `${process.env.REACT_APP_API_BASE_URL}/api/recipe_store/user_recipe`,
             {
               params: {
                 user_id: user_id,
@@ -79,7 +79,7 @@ export const Home = () => {
       const fetchLikedRecipes = async () => {
         try {
           const response = await axios.get(
-            "http://localhost:8080/api/recipe_store/user_liked_recipe",
+            `${process.env.REACT_APP_API_BASE_URL}/api/recipe_store/user_liked_recipe`,
             {
               params: {
                 recipe_id: LikedRecipesID,
@@ -102,7 +102,7 @@ export const Home = () => {
       const fetchBookmarkedRecipes = async () => {
         try {
           const response = await axios.get(
-            "http://localhost:8080/api/recipe_store/user_bookmarked_recipe",
+            `${process.env.REACT_APP_API_BASE_URL}/api/recipe_store/user_bookmarked_recipe`,
             {
               params: {
                 recipe_id: BookmarkedRecipesID,
@@ -173,7 +173,7 @@ export const Home = () => {
     : [];
 
   const slides = likedRecipesArray.map((item) => ({
-    image: item ? `http://localhost:8080/${item.photo}` : undefined, // Map the `image_url` to `image`
+    image: item ? `${process.env.REACT_APP_API_BASE_URL}/${item.photo}` : undefined, // Map the `image_url` to `image`
     title: item ? item.title : undefined, // Map the `description` to `content`
   }));
 
@@ -254,7 +254,7 @@ export const Home = () => {
                         key={recipe.recipe_id}
                       >
                         <img
-                          src={`http://localhost:8080/${recipe.photo}`}
+                          src={`${process.env.REACT_APP_API_BASE_URL}/${recipe.photo}`}
                           alt={`Image of ${recipe.title}`}
                           style={{
                             objectFit: "contain",
@@ -391,7 +391,7 @@ export const Home = () => {
                       key={index}
                     >
                       <img
-                        src={_.photo ? `http://localhost:8080/${_.photo}` : "/frame-13.png"}
+                        src={_.photo ? `${process.env.REACT_APP_API_BASE_URL}/${_.photo}` : "/frame-13.png"}
                         alt="slider item"
                         style={{
                           height: "300px",

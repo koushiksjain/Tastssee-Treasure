@@ -27,7 +27,7 @@ export const Profile = () => {
           return;
         }
 
-        const response = await fetch("http://localhost:8080/api/username", {
+        const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/username`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -57,7 +57,7 @@ export const Profile = () => {
     const fetchProfileImage = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8080/api/update_photo",
+          `${process.env.REACT_APP_API_BASE_URL}/api/update_photo`,
           {
             params: {
               user_id: user_id,
@@ -80,7 +80,7 @@ export const Profile = () => {
       const fetchRecipes = async () => {
         try {
           const response = await axios.get(
-            "http://localhost:8080/api/recipe_store/user_recipe",
+            `${process.env.REACT_APP_API_BASE_URL}/api/recipe_store/user_recipe`,
             {
               params: {
                 user_id: user_id,
@@ -103,7 +103,7 @@ export const Profile = () => {
       const fetchLikedRecipes = async () => {
         try {
           const response = await axios.get(
-            "http://localhost:8080/api/recipe_store/user_liked_recipe",
+            `${process.env.REACT_APP_API_BASE_URL}/api/recipe_store/user_liked_recipe`,
             {
               params: {
                 recipe_id: LikedRecipesID,
@@ -126,7 +126,7 @@ export const Profile = () => {
       const fetchBookmarkedRecipes = async () => {
         try {
           const response = await axios.get(
-            "http://localhost:8080/api/recipe_store/user_bookmarked_recipe",
+            `${process.env.REACT_APP_API_BASE_URL}/api/recipe_store/user_bookmarked_recipe`,
             {
               params: {
                 recipe_id: BookmarkedRecipesID,
@@ -169,7 +169,7 @@ export const Profile = () => {
   const userRecipes = user_recipes_arrray.map((item, index) => ({
     id: index,
     title: item.title,
-    image: `http://localhost:8080/${item.photo}`, // Map the `image_url` to `image`
+    image: `${process.env.REACT_APP_API_BASE_URL}/${item.photo}`, // Map the `image_url` to `image`
     ingredients: item ? item.ingredients : undefined, // Map the `description` to `content`
     description: item.description, // Map the `description` to `content`
     recipeID: item._id,
@@ -184,7 +184,7 @@ export const Profile = () => {
   const likedRecipes = user_liked_recipes_arrray.map((item, index) => ({
     id: index,
     title: item ? item.title : undefined,
-    image: item ? `http://localhost:8080/${item.photo}` : undefined, // Map the `image_url` to `image`
+    image: item ? `${process.env.REACT_APP_API_BASE_URL}/${item.photo}` : undefined, // Map the `image_url` to `image`
     ingredients: item ? item.ingredients : undefined, // Map the `description` to `content`
     description: item ? item.description : undefined, // Map the `description` to `content`
     recipeID: item ? item._id : undefined,
@@ -200,7 +200,7 @@ export const Profile = () => {
     (item, index) => ({
       id: index,
       title: item ? item.title : undefined,
-      image: item ? `http://localhost:8080/${item.photo}` : undefined, // Map the `image_url` to `image`
+      image: item ? `${process.env.REACT_APP_API_BASE_URL}/${item.photo}` : undefined, // Map the `image_url` to `image`
       ingredients: item ? item.ingredients : undefined, // Map the `description` to `content`
       description: item ? item.description : undefined, // Map the `description` to `content`
       recipeID: item ? item._id : undefined,
@@ -228,7 +228,7 @@ export const Profile = () => {
         console.log(user_id, recipeId);
         // Call the unlike API
         const response = await axios.post(
-          "http://localhost:8080/api/bookmark_recipe/remove_bookmark/",
+          `${process.env.REACT_APP_API_BASE_URL}/api/bookmark_recipe/remove_bookmark/`,
           {
             user_id: user_id,
             recipe_id: recipeId,
@@ -257,7 +257,7 @@ export const Profile = () => {
         console.log(user_id, recipeId);
         // Call the unlike API
         const response = await axios.post(
-          "http://localhost:8080/api/recipe_store/delete_recipe",
+          `${process.env.REACT_APP_API_BASE_URL}/api/recipe_store/delete_recipe`,
           {
             user_id: user_id,
             recipe_id: recipeId,
@@ -286,7 +286,7 @@ export const Profile = () => {
         console.log(user_id, recipeId);
         // Call the unlike API
         const response = await axios.post(
-          "http://localhost:8080/api/like_recipe/dislike/",
+          `${process.env.REACT_APP_API_BASE_URL}/api/like_recipe/dislike/`,
           {
             user_id: user_id,
             recipe_id: recipeId,
@@ -337,7 +337,7 @@ export const Profile = () => {
             <img
               src={
                 profileImage
-                  ? `http://localhost:8080/Profile_uploads/${profileImage} `
+                  ? `${process.env.REACT_APP_API_BASE_URL}/Profile_uploads/${profileImage} `
                   : "https://placehold.co/100x100"
               }
               alt="User profile"
