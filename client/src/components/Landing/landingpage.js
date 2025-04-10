@@ -108,7 +108,7 @@ function LandingPage() {
                   <img src={arrowElemImg} alt="Arrow Element Image" className="abs-img" />
                   <div className="item-card-contain item-contain-mt-30 item-card-contain2">
                     <div className="hghlt-text-contain">
-                      <img src="hat.jpg" alt="Tomato Image" className="abs-img" />
+                      <img src="hat.jpeg" alt="Tomato Image" className="abs-img" />
 
                       <div className="hghlt-text">Explore More</div>
                       <div className="hghlt-text grdnt-text">Recipes</div>
@@ -142,9 +142,9 @@ function LandingPage() {
               <div className="section-head deal-sec-head">
                 <div className="item-head py-2">Recipe</div>
                 <div className="item-span-head">
-                  <img src="hat.jpg" alt="Deal Section Heading Image" className="left-img" />
+                  <img src="hat.jpeg" alt="Deal Section Heading Image" className="left-img" />
                   Of the Week
-                  <img src="fork.jpg" alt="Deal Section Heading Image" className="right-img" />
+                  <img src="fork.jpeg" alt="Deal Section Heading Image" className="right-img" />
                 </div>
                 <div className="line"></div>
                 <div className="head-des">Don't miss out on our featured recipe this week!</div>
@@ -212,7 +212,7 @@ function LandingPage() {
           <div className="text-moving-item">
             <div className="text-moving-txt">Find Your</div>
             <div className="text-moving-img">
-              <img src="fork.jpg" alt="Find Recipe Now logo" />
+              <img src="fork.jpeg" alt="Find Recipe Now logo" />
             </div>
             <div className="text-moving-txt">Recipe Now</div>
             <div className="text-moving-img">
@@ -222,7 +222,7 @@ function LandingPage() {
           <div className="text-moving-item">
             <div className="text-moving-txt">Find Your</div>
             <div className="text-moving-img">
-              <img src="star.jpg" alt="Find Recipe Now logo" />
+              <img src="star.jpeg" alt="Find Recipe Now logo" />
             </div>
             <div className="text-moving-txt">Recipe Now</div>
             <div className="text-moving-img">
@@ -234,7 +234,7 @@ function LandingPage() {
           <div className="text-moving-item">
             <div className="text-moving-txt">Find Your</div>
             <div className="text-moving-img">
-              <img src="hat.jpg" alt="Find Recipe Now logo" />
+              <img src="hat.jpeg" alt="Find Recipe Now logo" />
             </div>
             <div className="text-moving-txt">Recipe Now</div>
             <div className="text-moving-img">
@@ -244,7 +244,7 @@ function LandingPage() {
           <div className="text-moving-item">
             <div className="text-moving-txt">Find Your</div>
             <div className="text-moving-img">
-              <img src="fork.jpg" alt="Find Recipe Now logo" />
+              <img src="fork.jpeg" alt="Find Recipe Now logo" />
             </div>
             <div className="text-moving-txt">Recipe Now</div>
             <div className="text-moving-img">
