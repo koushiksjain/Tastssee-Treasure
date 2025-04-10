@@ -350,7 +350,7 @@ button{
 .images {
   position: absolute;
   left: 47%;
-  top: 200%;
+  top: 150%;
   top: calc(50% + var(--radius / 2)px);
   width: 100vh;
   height: 100vh;
