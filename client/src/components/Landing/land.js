@@ -4,11 +4,9 @@ import LocomotiveScroll from "locomotive-scroll";
 import SplitType from "split-type";
 import { CSSRulePlugin } from "gsap/CSSRulePlugin"; // Ensure CSSRulePlugin is imported
 
-<<<<<<< HEAD
-console.log("ScrollTrigger Loaded?", typeof ScrollTrigger); // Should log: "function"
-=======
 
->>>>>>> 6a41af6 (deploy)
+console.log("ScrollTrigger Loaded?", typeof ScrollTrigger); // Should log: "function"
+
 gsap.registerPlugin(ScrollTrigger, CSSRulePlugin);
 
 
