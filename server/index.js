@@ -33,6 +33,17 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 app.use("/Profile_uploads", express.static(path.join(__dirname, "Profile_uploads")));
 
 
+// ===== 🟢 React frontend fallback route (CRA or Vite build) =====
+// Replace "client/build"
+const frontendPath = path.join(__dirname, "client", "build"); // or "dist"
+app.use(express.static(frontendPath));
+
+// Handle client-side routes
+app.get("*", (req, res) => {
+  res.sendFile(path.join(frontendPath, "index.html"));
+});
+
+
 
 const port = process.env.PORT || 8080;
 app.listen(port, () => console.log(`🚀 Listening on port ${port}...`));
